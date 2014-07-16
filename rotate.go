@@ -43,7 +43,7 @@ func get_size(fName string) (int, int) {
 func extract_args() (string, string, float64) {
 	args := os.Args[1:]
 	if len(args) < 2 {
-		fmt.Println("2 args required: image source, destination and rotation")
+		fmt.Println("3 args required: image source, destination and rotation")
 		os.Exit(1)
 	}
 	if len(args) > 4 {
